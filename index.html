@@ -59,19 +59,61 @@
     </main>
 
     <section class="container my-5">
-        <h1 class="text-center fs-2 my-5">Some Core Concepts of JavaScript</h1>
+        <h1 class="text-center fs-1 my-5">Some Core Concepts of JavaScript</h1>
 
         <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        <h5>How Does JavaScript Works?</h5>
+                        <h4>How Does JavaScript Works?</h4>
                     </button>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">How Does JavaScript Works?</div>
+                    <div class="accordion-body">
+                        <p class="fs-5">
+                            JavaScript is a high level, single threaded, interpreted programming language. For execution
+                            of JavaScript codes, every browser provides a JavaScript engine. For example, Google Chrome
+                            provides V8 engine for executing JavaScript codes.
+                        </p>
+                        <p class="fs-5">V8 engine takes the JavaScript source
+                            code, parses it, turns that into an Abstract Syntax Tree and then generates Bytecode from
+                            that tree. V8 engine uses TurboFan which follows Just In Time compilation and generates
+                            machine code from the Bytecode. Finally, This machine code runs on the CPU. So, this is how
+                            JavaScript works.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <h4>Differences Between Local Storage and Session Storage</h4>
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p class="fs-5">
+                            Local Storage and Session Storage are two mechanisms of Web Storage API. The differences of
+                            these two mechanisms are:
+                        <ul class="fs-5">
+                            <li>
+                                Local storage stores data in browser without any time limitation. On the
+                                other hand, Session storage stores data in browser for a limited duration.
+                            </li>
+                            <li>
+                                Local storage stores data until the data is
+                                explicitly removed by the users. On the
+                                other hand, Session storage stores data until the
+                                page is reloaded or the browser is closed.
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -89,26 +131,6 @@
                 </div>
             </div>
 
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        <h5>Differences Between Local Storage and Session Storage</h5>
-                    </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <p>
-                            Local Storage and Session Storage are two mechanisms of Web Storage API. The differences of
-                            these two mechanisms are:
-                        <ul>
-                            <li>Local Storage stores data </li>
-                        </ul>
-                        </p>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
